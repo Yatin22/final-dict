@@ -8,7 +8,7 @@ root = Tk()
 canvas = Canvas(root, width=1400, height=900)
 root.title("Complete Dictionary of SEO")
 root.configure(background="black")
-image = ImageTk.PhotoImage(Image.open("bgimage12.jpeg"))
+image = ImageTk.PhotoImage(Image.open("bgimage13.jpeg"))
 canvas.create_image(0, 0, anchor=NW, image=image)
 textin = StringVar()
 exlist={
@@ -508,8 +508,7 @@ def X():
     Label(root, text="", width=20, font="comicansans 12 bold", height=2, bg="black").place(x=800, y=280)
     Label(root, text="", width=20, font="comicansans 12 bold", height=2, bg="black").place(x=800, y=320)
 def Y():
-    Label(root, text="As we haven't discovered", width=20, font="comicansans 12 bold", height=2, bg="pink", ).place(
-        x=800, y=80)
+    Label(root, text="As we haven't discovered", width=20, font="comicansans 12 bold", height=2, bg="pink", ).place(x=800, y=80)
     Label(root, text="any words with these ", width=20, font="comicansans 12 bold", height=2, bg="pink").place(x=800,
                                                                                                                y=120)
     Label(root, text="letters but as we move", width=20, font="comicansans 12 bold", height=2, bg="pink").place(x=800,
@@ -556,6 +555,15 @@ def cont():
 def clr():
     textin.set("")
     output.delete(0.0, END)
+    Label(root, text="", width=20, font="comicansans 12 bold", height=2, bg="black", ).place(
+        x=800, y=80)
+    Label(root, text="", width=20, font="comicansans 12 bold", height=2, bg="black").place(x=800,y=120)
+    Label(root, text="", width=20, font="comicansans 12 bold", height=2, bg="black").place(x=800, y=120)
+    Label(root, text="", width=20, font="comicansans 12 bold", height=2, bg="black").place(x=800, y=160)
+    Label(root, text="", width=20, font="comicansans 12 bold", height=2, bg="black").place(x=800, y=200)
+    Label(root, text="", width=20, font="comicansans 12 bold", height=2, bg="black").place(x=800,y=240)
+    Label(root, text="", width=20, font="comicansans 12 bold", height=2, bg="black").place(x=800, y=280)
+    Label(root, text="", width=20, font="comicansans 12 bold", height=2, bg="black").place(x=800, y=320)
 menu = Menu(root)
 root.config(menu=menu)
 subm = Menu(menu)
